@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENR 145: Computational Methods</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font as the default sans-serif font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Style for the details marker */
+        summary {
+            cursor: pointer;
+            display: block;
+            /* Match card header styling */
+            font-size: 1.5rem; /* 2xl */
+            font-weight: 600; /* semibold */
+            padding: 1.5rem; /* p-6 */
+        }
+        summary:hover {
+            background-color: #f9fafb; /* bg-gray-50 */
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details > summary::before {
+            content: '›'; /* Changed icon to a chevron */
+            margin-right: 0.5rem;
+            font-size: 0.6em; /* Made the icon smaller */
+            transition: transform 0.2s;
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold; /* Added bold to make it clear */
+            position: relative; /* Added for fine-tuning */
+            top: -2px; /* Nudged up for better alignment */
+        }
+        details[open] > summary::before {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- Main Title Card -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-6">
+            <div class="p-6">
+                <div class="flex items-center space-x-4 mb-4">
+                    <!-- Placeholder for Coe College Logo -->
+                    <img class="h-16 w-16" src="https://placehold.co/100x100/A00000/FFFFFF?text=Coe" alt="Coe College Logo">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900">ENR 145: Computational Methods</h1>
+                        <p class="text-lg text-gray-600">for Physicists and Engineers (Spring 2026)</p>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" 
+                       class="inline-block bg-red-700 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-800 transition-colors shadow">
+                       Download Full Syllabus (PDF)
+                    </a>
+                    <a href="#" 
+                       class="inline-block bg-gray-700 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors shadow">
+                       Upload Assignments to Moodle
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- Left Column (Main Info) -->
+            <div class="lg:col-span-2 space-y-6">
+
+                <!-- Course Description Card -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <summary>Course Description</summary>
+                    <div class="p-6 pt-0 space-y-4 text-gray-700">
+                        <p>
+                            In modern physics and engineering, computation is essential for planning, modeling, visualization, and analysis. It provides viable means—sometimes the *only* viable means—to make sense of what is going on.
+                        </p>
+                        <p>
+                            This course provides a broad, interdisciplinary survey of computational tools and methods. Unlike a traditional computer science course, our focus is on the practical **application** of existing tools, algorithms, and platforms to solve complex, real-world problems. We will blitz through several topics, giving you the skills to dig deep and build amazing things.
+                        </p>
+                        <div>
+                            <p class="font-medium text-gray-800">We will cover the following modules:</p>
+                            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                                <li><span class="font-semibold">Python:</span> General coding, data analysis, visualization, and algorithms.</li>
+                                <li><span class="font-semibold">COMSOL:</span> ODE/PDEs, Finite Element Analysis (FEA), and Computational Fluid Dynamics (CFD).</li>
+                                <li><span class="font-semibold">MD Simulations:</span> A dive into Molecular Dynamics.</li>
+                                <li><span class="font-semibold">Digital Signals:</span> Working with wearable biosensors, data collection, and motion detection.</li>
+                                <li><span class="font-semibold">Final Project:</span> A multi-week project to showcase your new skills.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Module 1: Python -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
+                    <summary>Module 1: Python (4 weeks)</summary>
+                    <div class="p-6 pt-0">
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 1:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 2:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 3:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 4:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Module 2: COMSOL -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
+                    <summary>Module 2: COMSOL (4 weeks)</summary>
+                    <div class="p-6 pt-0">
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 5:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 6:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 7:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 8:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Module 3: MD Simulations -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
+                    <summary>Module 3: MD Simulations (2 weeks)</summary>
+                    <div class="p-6 pt-0">
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 9:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 10:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Module 4: Digital Signals -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
+                    <summary>Module 4: Digital Signals (2 weeks)</summary>
+                    <div class="p-6 pt-0">
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 11:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-16">Week 12:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Slides]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Resources]</a>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Assignment]</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Module 5: Final Project -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
+                    <summary>Module 5: Final Project (Weeks 13-15)</summary>
+                    <div class="p-6 pt-0">
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-24">Week 13:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Proposal Due]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-24">Week 14:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Tech Demo]</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="font-medium text-gray-800 w-24">Week 15:</span>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">[Final Presentation]</a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Grading & AI Policy Card -->
+                <details id="grading" class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <summary>Course Philosophy</summary>
+                    <div class="p-6 pt-0 space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Grading: The Learning Loop</h3>
+                            <p class="text-gray-700">
+                                This course uses a mastery-based "learning loop." There is no partial credit. Assignments are evaluated as <span class="font-medium bg-green-100 text-green-800 px-2 py-0.5 rounded">Exemplary</span>, <span class="font-medium bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Success</span>, or <span class="font-medium bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">Retry</span>. The goal is to try, make mistakes, reflect, revise, and try again—without penalty for mistakes, as long as you demonstrate growth.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Tokens</h3>
+                            <p class="text-gray-700">
+                                You will start with <span class="font-bold">5 tokens</span>. One token can be spent to get a 36-hour deadline extension or to retry an assignment a second time (a third submission).
+                            </D>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">AI Policy: "Roller Skates, Not Crutches"</h3>
+                            <p class="text-gray-700">
+                                AI tools (like ChatGPT or Copilot) are permitted as long as they support your learning and do not replace your independent thought. All AI-generated content (code or text) must be clearly cited and labeled.
+                            </p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Right Column (Side Info) -->
+            <div class="lg:col-span-1 space-y-6">
+
+                <!-- Instructor Info Card -->
+                <details id="instructor" class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <summary>Instructor</summary>
+                    <div class="p-6 pt-0 space-y-2">
+                        <p class="text-lg font-medium text-gray-800">Professor Xiang Li</p>
+                        <p class="text-gray-700">
+                            <span class="font-semibold">Email:</span> <a href="mailto:xili@coe.edu" class="text-blue-600 hover:underline">xili@coe.edu</a>
+                        </p>
+                        <p class="text-gray-700">
+                            <span class="font-semibold">Student Hours:</span> Walk-in (TBD) or by individual appointment.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Class Info Card -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <summary>Class Details</summary>
+                    <div class="p-6 pt-0 space-y-4">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Lecture Sections:</p>
+                            <ul class="list-disc list-inside text-gray-700">
+                                <li><span class="font-medium">ENR 145 01:</span> MW 3:00 PM - 4:20 PM</li>
+                                <li><span class="font-medium">ENR 145 02:</span> TR 11:00 AM - 12:20 PM</li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-gray-700 font-semibold">Course Links:</p>
+                            <div class="flex flex-col space-y-2 mt-2">
+                                <a href="#" class="inline-block bg-gray-800 text-white text-center py-2 px-4 rounded-lg font-medium hover:bg-gray-700 transition-colors">
+                                    Moodle
+                                </a>
+                                <a href="#" class="inline-block bg-gray-800 text-white text-center py-2 px-4 rounded-lg font-medium hover:bg-gray-700 transition-colors">
+                                    GitHub Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-gray-500 py-6">
+        <p>&copy; 2026 Xiang Li, Coe College. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
