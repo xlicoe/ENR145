@@ -22,7 +22,10 @@
         /* Style for the details marker */
         summary {
             cursor: pointer;
-            display: block;
+            display: flex; /* Use flexbox for layout */
+            justify-content: flex-start; /* Align items to the start */
+            align-items: center; /* Vertically center items */
+            list-style-type: none; /* Force-remove the default marker */
             /* Match card header styling */
             font-size: 1.5rem; /* 2xl */
             font-weight: 600; /* semibold */
@@ -34,17 +37,17 @@
         details > summary::-webkit-details-marker {
             display: none;
         }
+        /* Changed to ::before to position it on the left */
         details > summary::before {
             content: '›'; /* Changed icon to a chevron */
-            margin-right: 0.5rem;
-            font-size: 0.6em; /* Made the icon smaller */
+            margin-right: 0.75rem; /* Add space on the right (was margin-left) */
+            font-size: 0.8em; /* Made the icon larger (was 0.6em) */
             transition: transform 0.2s;
             display: inline-block;
-            vertical-align: middle;
+            /* vertical-align and top are no longer needed with flexbox */
             font-weight: bold; /* Added bold to make it clear */
-            position: relative; /* Added for fine-tuning */
-            top: -2px; /* Nudged up for better alignment */
         }
+        /* Changed to ::before */
         details[open] > summary::before {
             transform: rotate(90deg);
         }
