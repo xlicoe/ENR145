@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENR 145 Computational Methods</title>
     
-    <script src="js/tailwind.js"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  if (typeof tailwind === 'undefined') {
+    console.log('Internet/CDN is down. Loading local Tailwind...');
+    document.write('<script src="js/tailwind.js"><\/script>');
+  }
+</script>
     
 
     <style>
