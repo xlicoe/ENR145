@@ -4,50 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENR 145 Computational Methods</title>
-    <!-- Import Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Import Inter font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="js/tailwind.js"></script>
+
     <style>
-        /* Apply Inter font as the default sans-serif font */
+        /* 2. USE SYSTEM FONTS (OFFLINE PROOF) */
+        /* This uses the native font of the user's computer (clean and fast) */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
         }
+        
         /* Add smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
+        
         /* Style for the details marker */
         summary {
             cursor: pointer;
-            display: flex; /* Use flexbox for layout */
-            justify-content: flex-start; /* Align items to the start */
-            align-items: center; /* Vertically center items */
-            list-style-type: none; /* Force-remove the default marker */
-            /* Match card header styling */
-            font-size: 1.5rem; /* 2xl */
-            font-weight: 600; /* semibold */
-            padding: 1.5rem; /* p-6 */
+            display: flex; 
+            justify-content: flex-start; 
+            align-items: center; 
+            list-style-type: none; 
+            font-size: 1.5rem; 
+            font-weight: 600; 
+            padding: 1.5rem; 
         }
         summary:hover {
-            background-color: #f9fafb; /* bg-gray-50 */
+            background-color: #f9fafb; 
         }
         details > summary::-webkit-details-marker {
             display: none;
         }
-        /* Changed to ::before to position it on the left */
         details > summary::before {
-            content: '›'; /* Changed icon to a chevron */
-            margin-right: 0.75rem; /* Add space on the right (was margin-left) */
-            font-size: 0.8em; /* Made the icon larger (was 0.6em) */
+            content: '›'; 
+            margin-right: 0.75rem; 
+            font-size: 0.8em; 
             transition: transform 0.2s;
             display: inline-block;
-            /* vertical-align and top are no longer needed with flexbox */
-            font-weight: bold; /* Added bold to make it clear */
+            font-weight: bold; 
         }
-        /* Changed to ::before */
         details[open] > summary::before {
             transform: rotate(90deg);
         }
@@ -57,18 +53,15 @@
 
     <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
         
-        <!-- Main Title Card -->
         <div class="bg-white rounded-xl shadow-md overflow-hidden mb-6">
             <div class="p-6">
                 <div class="flex items-center space-x-4 mb-4">
-                    <!-- Placeholder for Coe College Logo -->
                     <img class="h-16 w-16" src="webdev/Coe_logo.jpeg" alt="Coe College Logo">
                     <div>
                         <h1 class="text-3xl font-bold text-gray-900">ENR 145: Computational Methods for Physicists and Engineers</h1>
                         <p class="text-lg text-slate-900">Department of Engieering Physics, Coe College | Cedar Rapids, Iowa</p>
                     </div>
                 </div>
-                <!-- Buttons -->
                 <div class="flex flex-wrap gap-4">
                     <a href="#" 
                        class="inline-block bg-red-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors shadow">
@@ -82,13 +75,10 @@
             </div>
         </div>
 
-        <!-- Main Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-            <!-- Left Column (Main Info) -->
             <div class="lg:col-span-2 space-y-6">
 
-                <!-- Course Description Card -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden">
                     <summary>Course Description</summary>
                     <div class="p-6 pt-0 space-y-4 text-gray-700">
@@ -123,8 +113,7 @@
                     </div>
                 </details>
 
-             <!-- Module 1: Python -->
-                <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
+             <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
                     <summary>Module 1: Codes, Visuals, and Algos (4 weeks)</summary>
                     <div class="p-6 pt-0">
                         <div class="space-y-2">
@@ -156,7 +145,6 @@
                     </div>
                 </details>
 
-                <!-- Module 2: COMSOL -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
                     <summary>Module 2: Multiphysics Simulation (4 weeks)</summary>
                     <div class="p-6 pt-0">
@@ -189,7 +177,6 @@
                     </div>
                 </details>
 
-                <!-- Module 3: MD Simulations -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
                     <summary>Module 3: Cluster-based Molecular Dynamics Simulation (2 weeks, by Prof. Ugur Akgun)</summary>
                     <div class="p-6 pt-0">
@@ -203,7 +190,6 @@
                     </div>
                 </details>
 
-                <!-- Module 4: Digital Signals -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
                     <summary>Module 4: Digital Signals (2 weeks)</summary>
                     <div class="p-6 pt-0">
@@ -224,7 +210,6 @@
                     </div>
                 </details>
 
-                <!-- Module 5: Final Project -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
                     <summary>Module 5: Final Project (Weeks 13-15)</summary>
                     <div class="p-6 pt-0">
@@ -245,7 +230,6 @@
                     </div>
                 </details>
 
-                <!-- Grading & AI Policy Card -->
                 <details id="grading" class="bg-white rounded-xl shadow-md overflow-hidden">
                     <summary>Course Philosophy</summary>
                     <div class="p-6 pt-0 space-y-4">
@@ -259,7 +243,7 @@
                             <h3 class="text-lg font-semibold text-gray-800">Tokens</h3>
                             <p class="text-gray-700">
                                 You will start with <span class="font-bold">5 tokens</span>. One token can be spent to get a 36-hour deadline extension or to retry an assignment a second time (a third submission).
-                            </D>
+                            </p>
                         </div>
                         <div>
                             <h3 class="text-lg font-semibold text-gray-800">AI Policy: "Roller Skates, Not Crutches"</h3>
@@ -270,8 +254,7 @@
                     </div>
                 </details>
         
-              <!-- Instructor Info Card -->
-                  <details id="instructor" class="bg-white rounded-xl shadow-md overflow-hidden">
+              <details id="instructor" class="bg-white rounded-xl shadow-md overflow-hidden">
                     <summary>About me</summary>
                     <div class="p-6 pt-0 space-y-2">
                         <h3 class="text-xl font-semibold mb-2">Xiang Li</h3>
@@ -288,8 +271,7 @@
                     </div>
                 </details>
 
-             <!-- Class Info Card -->
-                <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
+             <details class="bg-white rounded-xl shadow-md overflow-hidden" open>
 
                      <div class="flex flex-wrap gap-4">
                          <a href="https://coewinmoodle.coe.edu/moodle/course/section.php?id=73749" 
@@ -312,13 +294,11 @@
                     </div>
                 </details>
            </div>     
-            <!-- Right Column (Side Info) -->
             <div class="lg:col-span-1 space-y-6">
 
               
                
 
-                <!-- Class Info Card -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden">
                     <summary>Useful links:</summary>
                       <div class="p-6 pt-3 space-y-4 ml-4 ">
