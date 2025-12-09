@@ -6,9 +6,9 @@ To visit: https://xlicoe.github.io/ENR145/
 
 ## Useful links
 
-### 0)
+### 0) Numerical Methods
 
-### 1)
+### 1) Codes, Visuals, and Algos
 
 Stanford Univeristy Code in Place: https://codeinplace.stanford.edu/public/studenthome#welcome
 
