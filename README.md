@@ -4,6 +4,8 @@ Repo for Computational Methods for Physicists and Engineers, debut 2026 Spring
 
 To visit: https://xlicoe.github.io/ENR145/
 
+Submit your assignments to moodle: [link](https://coewinmoodle.coe.edu/moodle/course/section.php?id=73749).
+
 ## Useful links
 
 ### _0) Numerical Methods_
