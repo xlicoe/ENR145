@@ -2,18 +2,18 @@
 
 Repo for Computational Methods for Physicists and Engineers, debut 2026 Spring
 
-To visit: https://xlicoe.github.io/ENR145/
+To visit: (https://xlicoe.github.io/ENR145/)
 
 ## Useful links
 
 ### _0) Numerical Methods_
 
 ### _1) Codes, Visuals, and Algos_
-```
 
-Stanford Univeristy Code in Place: https://codeinplace.stanford.edu/public/studenthome#welcome
+
+Stanford Univeristy Code in Place: (https://codeinplace.stanford.edu/public/studenthome#welcome)
 
 16x16 sprite generator: https://xlicoe.github.io/16x16_pixel_art_gen/
 
 Klotski State Space Tutorial: https://xlicoe.github.io/klotski-state-space-tutorial/
-```
+
