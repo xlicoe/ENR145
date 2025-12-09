@@ -6,6 +6,10 @@ To visit: https://xlicoe.github.io/ENR145/
 
 ## Useful links
 
+### 0)
+
+### 1)
+
 Stanford Univeristy Code in Place: https://codeinplace.stanford.edu/public/studenthome#welcome
 
 16x16 sprite generator: https://xlicoe.github.io/16x16_pixel_art_gen/
