@@ -10,6 +10,8 @@ Submit your assignments to moodle: [link](https://coewinmoodle.coe.edu/moodle/co
 
 ### _0) Numerical Methods_
 
++ Hamming codes: https://www.youtube.com/watch?v=X8jsijhllIA 
+
 ### _1) Codes, Visuals, and Algos_
 
 
