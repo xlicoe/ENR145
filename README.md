@@ -21,3 +21,7 @@ Submit your assignments to moodle: [link](https://coewinmoodle.coe.edu/moodle/co
 
 + Klotski State Space Tutorial: https://xlicoe.github.io/klotski-state-space-tutorial/
 
+### _2) COMSOL Multiphysics_
+
++ What is Multiphysics? https://www.comsol.com/multiphysics
+  
